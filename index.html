@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototipo · expediente SER/2026/0000145362</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="banner">
+    <p class="kicker">Prototipo estático · no es un sistema oficial</p>
+    <h1>Chatbot de la plataforma de apoyo, formación y orientación contra la violencia de género</h1>
+    <p class="lead">Solo muestra datos publicados del anuncio de licitación. No atiende casos, no simula situaciones personales y no recoge datos.</p>
+  </header>
+
+  <main>
+    <section class="notice" aria-labelledby="notice-title">
+      <h2 id="notice-title">Anuncio publicado</h2>
+      <dl>
+        <div><dt>Estado</dt><dd>Publicada</dd></div>
+        <div><dt>Expediente</dt><dd>SER/2026/0000145362</dd></div>
+        <div><dt>Órgano</dt><dd>Viceconsejería de Justicia · Consejería de Administraciones Públicas, Justicia y Seguridad · Comunidad Autónoma de Canarias</dd></div>
+        <div><dt>Objeto</dt><dd>Servicio de desarrollo de un chatbot para la futura plataforma inteligente de apoyo, formación y orientación contra la violencia de género de la Viceconsejería de Justicia y Seguridad.</dd></div>
+        <div><dt>Alcance publicado</dt><dd>Mantenimiento correctivo, gestión de incidencias, revisión y adecuación de contenidos, y despliegue y operación en infraestructura de nube pública segura, con continuidad del servicio y protección de datos.</dd></div>
+        <div><dt>Procedimiento</dt><dd>Abierto simplificado · tramitación ordinaria · servicios · CPV 72200000</dd></div>
+        <div><dt>Presupuesto base sin impuestos</dt><dd>50.696,26 EUR</dd></div>
+        <div><dt>Valor estimado</dt><dd>50.696,26 EUR · sin financiación de la UE</dd></div>
+        <div><dt>Plazo de ejecución publicado</dt><dd>3 meses</dd></div>
+        <div><dt>Presentación de ofertas</dt><dd>Electrónica, hasta el 11/10/2026 a las 23:59 (hora de España, UTC+2). En Asia/Karachi (PKT, UTC+5) es el 12/10/2026 a las 02:59.</dd></div>
+        <div><dt>Lugar de ejecución</dt><dd>España · Canarias</dd></div>
+        <div><dt>Contacto del anuncio</dt><dd>jreyare@gobiernodecanarias.org · +34 928117943</dd></div>
+        <div><dt>Fuente</dt><dd><a href="https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&amp;idEvl=HwVwWi7Qwge7JOCXkOhcDg%3D%3D">Plataforma de Contratación del Sector Público</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="chat" aria-labelledby="chat-title">
+      <h2 id="chat-title">Consultas sobre el anuncio</h2>
+      <p class="hint">Respuestas escritas de antemano. Si la pregunta no está en el anuncio, el prototipo la rechaza.</p>
+      <div id="log" class="log" role="log" aria-live="polite"></div>
+      <div class="chips" role="group" aria-label="Preguntas de ejemplo">
+        <button type="button" data-q="¿Cuál es el objeto del contrato?">Objeto</button>
+        <button type="button" data-q="¿Quién contrata y cuál es el expediente?">Órgano y expediente</button>
+        <button type="button" data-q="¿Hasta cuándo se pueden presentar ofertas?">Plazo</button>
+        <button type="button" data-q="¿Cuál es el presupuesto?">Presupuesto</button>
+        <button type="button" data-q="¿Qué incluye el alcance publicado?">Alcance</button>
+        <button type="button" data-q="¿Qué criterios de adjudicación publica el anuncio?">Criterios</button>
+      </div>
+      <form id="ask">
+        <label for="q">Pregunta</label>
+        <textarea id="q" name="q" rows="3" maxlength="500" placeholder="Pregunta solo sobre el anuncio publicado"></textarea>
+        <button type="submit">Consultar el anuncio</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prototype by 92 Logics · cowork@92logics.com · not an official government system.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
